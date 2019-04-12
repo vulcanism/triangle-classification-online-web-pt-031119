@@ -12,7 +12,7 @@ class Triangle
   def kind
     if (@side1 == @side2) && (@side2 == @side3)
       :equilateral
-    elsif (@side1 == @side2 || @side2 = @side3 || @side1 == @side3)
+    elsif (@side1 == @side2) || (@side2 = @side3) || (@side1 == @side3)
       :isosceles
     elsif (@side1 != @side2) && (@side2 != @side3) && (@side1 != @side3)
       :scalene
