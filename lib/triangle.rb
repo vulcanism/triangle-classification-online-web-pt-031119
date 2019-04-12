@@ -20,6 +20,8 @@ class Triangle
       :scalene
     elsif (side1 <= 0 || side2 <= 0 || side3 <= 0)
       raise TriangleError
+      
+    elsif (side1 + side2 <= side3)
     end
     
   end
