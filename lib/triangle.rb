@@ -5,10 +5,6 @@ class Triangle
     @side3 = side3
   end
   
-  class TriangleError < StandardError
-    
-  end
-  
   def kind
     if (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
       raise TriangleError
@@ -25,5 +21,9 @@ class Triangle
   end
     
  end
+ 
+ class TriangleError < StandardError
+    
+  end
   
 end
